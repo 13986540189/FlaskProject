@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../static/js/echarts.min.js"></script>
+    <script src="../static/js/jquery-3.5.1.js"></script>
+
+</head>
+<body>
+<div id="main" style="width: 600px;height: 800px"></div>
+</body>
+   <script>
+        var etest=echarts.init(document.getElementById("main"));
+        option = {
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    },
+    yAxis: {
+        type: 'value'
+    },
+    series: [{
+        data: [820, 932, 901, 934, 1290, 1330, 1320],
+        type: 'line',
+        areaStyle: {}
+    }]
+};
+
+            etest.setOption(option);
+    </script>
+</html>
