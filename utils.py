@@ -7,7 +7,7 @@ def get_time():
 
 #获取连接
 def get_connect():
-    con = pymysql.connect(host="localhost", port=3306, user="root", passwd="root", db="newsqa", charset="utf8")
+    con = pymysql.connect(host="39.103.232.195", port=3306, user="root", passwd="root", db="newsqa", charset="utf8")
     cur = con.cursor()
     return con,cur
 
